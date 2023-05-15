@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pe-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/
+    j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+  <title>Meu Site </title>
+</head>
+
+<body>
+  <header>
+    <h1>Lucas Vieira </h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Carrinho</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="destaque">
+    <article>
+      <img src="img/01.jpg" alt="Produto em destaque">
+      <h2>Crie seu web site</h2>
+      <p class="preco">R$ 50,00</p>
+      <p class="descricao">Tenha presença online profissional com um site personalizado que reflita sua marca e atria
+        seus visitantes. </p>
+      <button>Comprar</button>
+    </article>
+
+  </section>
+  <section class="produtos produto-container">
+    <h2>Categoria de Produtos</h2>
+    <ul>
+      <li>
+        <img src="img/02.jpg" alt="Produto">
+        <h3>Produto Fisico</h3>
+        <p class="preco">R$ 30,00</p>
+        <p class="descricao">Enconre uma ampla variedade de formas para vender seu produto fisico com uma alta qualidade
+          em nosso web site</p>
+        <button>Comprar</button>
+      </li>
+      <li>
+        <img src="img/3.jpg" alt="Produto">
+        <h3>Serviços</h3>
+        <p class="preco">R$ 40,00</p>
+        <p class="descricao">Breve descrição do produto.</p>
+        <button>Comprar</button>
+      </li>
+    </ul>
+
+  </section>
+  <div class="container mt-2">
+    <!--   <div class="card card-block mb-2">
+        <h4 class="card-title">Card 1</h4>
+        <p class="card-text">Welcom to bootstrap card styles</p>
+        <a href="#" class="btn btn-primary">Submit</a>
+      </div>   -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card card-block">
+          <h4 class="card-title text-right"><i class="material-icons">  Vendas Online </i></h4>
+        <img src="img/003.jpg" alt="Photo of sunset">
+            <h5 class="card-title mt-3 mb-3">Faça suas vendas aumentarem o valor </h5>
+            <p class="card-text"> Venha conhecer </p> 
+      </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card card-block">
+          <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+        <img src="img/00.jpg" alt="Photo of sunset">
+            <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
+            <p class="card-text">This is a company that builds websites, web .</p> 
+      </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card card-block">
+          <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+        <img src="img/00002.jpg" alt="Photo of sunset">
+            <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
+            <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+      </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card card-block">
+          <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+        <img src="img/0001.jpg" alt="Photo of sunset">
+            <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
+            <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+      </div>
+        </div>    
+      </div>
+      
+    </div>
+ 
+  <section class="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Preço</th>
+          <th>Total</th>
+          <th>Remover</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Produto 1</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>R$ 30,00</td>
+          <td>R$ 30,00</td>
+          <td><button>Remover</button></td>
+        </tr>
+        <tr>
+          <td>Produto 2</td>
+          <td><input type="number" value="2" min="1"></td>
+          <td>R$ 40,00</td>
+          <td>R$ 80,00</td>
+          <td><button>Remover</button></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>R$ 110,00</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    <button>Finalizar Compra</button>
+  </section>
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <fieldset>
+        <legend>Informações de Envio</legend>
+        <label>Nome Completo<input type="text"></label>
+        <label>Endereço<input type="text"></label>
+        <label>Cidade<input type="text"></label>
+        <label>Estado<input type="text"></label>
+        <label>CEP<input type="text"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Informações de Pagamento</legend>
+        <label>Número do Cartão de Crédito<input type="text"></label>
+        <label>Data de Validade<input type="text"></label>
+        <label>Código de Segurança<input type="text"></label>
+        <label><input type="checkbox"> Pagamento Seguro</label>
+      </fieldset>
+      <fieldset>
+        <legend>Opções de Envio</legend>
+        <label><input type="radio" name="envio" value="rápido"> Envio Rápido</label>
+        <label><input type="radio" name="envio" value="normal"> Envio Normal</label>
+      </fieldset>
+      <button>Finalizar Compra</button>
+    </form>
+  </section>
+  <button id="adicionar-ao-carrinho">Adicionar ao carrinho</button>
+
+  </div>
